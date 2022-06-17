@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title%}Контакты{% endblock %}
+{% block content %}
+
+    <div class="main">
+        <section class="intro">
+            <div class="wrapper">
+                <div class="intro__wrapp-two">
+
+                    <div class="intro-photo">
+                        <img src="{% static 'img/ее.png' %}" alt="Cheryarina" class="intro__photo-me">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- intro finish-->
+        <!-- feedback start-->
+        <section class="feedback">
+            <div class="wrapper">
+                <div class="feedback__wrapp">
+                    <h1 class="feedback__title">ОСТАВИТЬ ЗАЯВКУ</h1>
+                    <div class="feedback__info">
+                        <form method="post">
+                            {% csrf_token %}
+                            <p class="feedback__info-name">ФИО:</p>
+                            {{ form.name }}
+                            <p class="feedback__info-contact">Контакты:</p>
+                            {{ form.contact }}
+                            <p class="feedback__info-desk">Описание услуги:</p>
+                            {{ form.desk }}
+                            <button type="submit" class="feedback__info-send">
+                                ОТПРАВИТЬ!
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feedback finish-->
+    </div>
+{% endblock %}

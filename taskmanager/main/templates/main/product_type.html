@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title%}Работы{% endblock %}
+{% block content %}
+    <div class="main">
+
+        <section class="test">
+            <div class="wrapper__test">
+                <h1 class="test__title">ВЫБЕРИТЕ ТИП ПРОДУКЦИИ</h1>
+                <div class="test__buttons">
+                    <a href="{% url 'product_m' %}" class="test__button">мерч</a>
+                    <a href="{% url 'product_p' %}" class="test__button-big">печатная продукция</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}

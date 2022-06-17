@@ -1,0 +1,574 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* inter-regular - cyrillic */
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/inter-v11-cyrillic-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/inter-v11-cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/inter-v11-cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/inter-v11-cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/inter-v11-cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/inter-v11-cyrillic-regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  /* inter-500 - cyrillic */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/inter-v11-cyrillic-500.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/inter-v11-cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/inter-v11-cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/inter-v11-cyrillic-500.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/inter-v11-cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/inter-v11-cyrillic-500.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  /* inter-700 - cyrillic */
+  @font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/inter-v11-cyrillic-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('../fonts/inter-v11-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/inter-v11-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/inter-v11-cyrillic-700.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/inter-v11-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/inter-v11-cyrillic-700.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+
+html{
+	box-sizing: border-box;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}  
+body{
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #42553E;
+
+	
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.wrapper{
+	max-width: 1232px;
+	margin: 0 auto;
+}
+/* header styles start */
+.header{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	
+}
+.header__wrapper{
+	display: flex;
+	
+    flex-wrap:wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    padding-top: 23px;
+	padding-left: 90px;
+	
+}
+
+.header_list{
+    display: flex;
+    flex-wrap:wrap;
+	align-content: flex-start;
+}
+.header_item{
+    margin-right: 80px;
+	padding-left: 0px;
+}
+
+.header_link{
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none
+}
+.header_logo-link{
+	display: flex;
+    flex-wrap:wrap;
+	align-content: flex-start;
+}
+.header_logo-pic{
+	font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+	background-size: cover;
+	background: url(/img/svg/cherry.svg) no-repeat left;
+	padding-left: 19px;
+	
+}
+.header_link:hover, .header__link:focus, .header__link:active{
+    opacity: .75;
+}
+.header_logo-pic:hover, .header_logo-pic:focus, .header_logo-pic:active{
+    opacity: .75;
+}
+
+/* header styles finish */
+/* intro styles start */
+.intro{
+    min-height: 100vh;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+    height: 1061px;
+    
+}
+.intro__two{
+	min-height: 100vh;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+    height: 872px;
+}
+.intro__wrapp{
+	position: relative;
+	margin-left: 74px;
+	z-index: 1;
+	height: 688px;
+	background-color: #E5F1E2;
+	max-width: 1084px;
+}
+.intro__wrapp-two{
+	position: relative;
+	margin-left: 74px;
+	z-index: 1;
+	height: 687px;
+	background-color: #E5F1E2;
+	max-width: 1084px;
+}
+.intro__title-many{
+	position: absolute;
+	margin-top: 228px;
+	margin-left: 25px;
+
+}
+.intro__title-many-cont{
+	position: absolute;
+	margin-top: 28px;
+	margin-left: 120px;
+
+}
+.intro__title {
+	
+	max-width: 419px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: 0.165em;
+
+}
+.intro__title-cont {
+	
+
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 38px;
+	
+
+}
+.intro__subtitle{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: 0.165em;
+}
+.intro__title-many-two{
+	position: absolute;
+	padding-left: 613px;
+	padding-top: 123px;
+}
+.intro__title-two{
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: 0.165em;
+	padding-left: 21px;
+}
+.intro__subtitle-two{
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.165em;
+	margin-bottom: 17px;
+	padding-left: 21px;
+}
+.intro__text-box{
+	width: 574px;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.165em;
+	background-color: #FBF2EB;
+	padding-left: 21px;
+	padding-right: 63px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+.intro__text-two{
+	width: 450px;
+}
+.intro-photo{
+	float: right;
+	z-index: 2;
+}
+.intro-photo-two{
+	float: left;
+	z-index: 2;
+}
+/* intro styles finish */
+/* feedback styles start */
+.feedback__wrapp{
+	height: 700px;
+	background-color: #FBF2EB;
+	transform: translateY(-177px);
+}
+.feedback__title{
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: 0.165em;
+	padding: 36px 320px 71px 320px;
+}
+.feedback__info{
+	max-width: 878px;
+	margin-left: 177px;
+}
+.feedback__info-name{
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 0.165em;
+	color: #000000;
+	margin-bottom: 17px;
+}
+.feedback__info-name-enter{
+	width: 878px;
+	height: 40px;
+	background-color: #ffffff;
+	opacity: .58;
+	border: none;
+	margin-bottom: 23px;
+}
+.feedback__info-contact{
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 0.165em;
+	color: #000000;
+	margin-bottom: 17px;
+}
+.feedback__info-contact-enter{
+	width: 878px;
+	height: 40px;
+	background-color: #ffffff;
+	opacity: .58;
+	border: none;
+	margin-bottom: 23px;
+}
+.feedback__info-desk{
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 0.165em;
+	color: #000000;
+	margin-bottom: 17px;
+}
+.feedback__info-desk-enter{
+	width: 878px;
+	height: 80px;
+	background-color: #ffffff;
+	opacity: .58;
+	border: none;
+	margin-bottom: 58px;
+}
+.feedback__info-send{
+	margin-left: 265px;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 0.165em;
+	color: #42553E;
+	background-color: #C0DEBA;
+	width: 348px;
+	height: 50px;
+	border: none;
+}
+/* feedback styles finish */
+/* question styles start */
+.wrapper__quest{
+	max-width: 614px;
+	margin: 0 auto;
+}
+.question{
+	min-height: 100vh;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+    height: 624px;
+}
+.question__one{
+	margin-top: 119px;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	color: #000000;
+	padding: 22px 45px;
+	background: rgba(255, 255, 255, 0.58);
+	margin-bottom: 160px;
+
+}
+.wrapper__quest-small{
+	max-width: 350px;
+	margin: 0 auto;
+}
+.question__start{
+	
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+	color: #000000;
+	padding: 20px 75px;
+	background: #FBF2EB;
+	text-decoration: none;
+}
+.question__start:hover, .question__start:focus, .question__start:active{
+	text-decoration: underline ;
+}
+/* question styles finish */
+/* type styles start */
+.wrapper__test{
+	max-width: 878px;
+	margin: 0 auto;
+}
+.test{
+	min-height: 100vh;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+    height: 624px;
+}
+.test__title{
+	margin-top: 94px;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #42553E;
+}
+.test__buttons{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+	margin-top: 120px;
+
+}
+.test__button{
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.58);
+	height: 196px;
+	border: none;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+	padding-top: 69px;
+	padding-bottom: 81px;
+	color: #42553E;
+}
+.test__button:hover, .test__button:focus, .test__button:active{
+	text-decoration: underline ;
+}
+.test__button-big{
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.58);
+	height: 196px;
+	border: none;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 55px;
+	color: #42553E;
+}
+.test__button-big:hover, .test__button-big:focus, .test__button-big:active{
+	text-decoration: underline ;
+}
+/* type styles finish */
+.works{
+	min-height: 100vh;
+	height: 3350px;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+
+}
+.works_vk_adv{
+	min-height: 100vh;
+	height: 3250px;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+
+}
+.works_inst_post{
+	min-height: 100vh;
+	height: 4400px;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+}
+.works_inst_story{
+	min-height: 100vh;
+	height: 3950px;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+}
+.works_product_print{
+	min-height: 100vh;
+	height: 2950px;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+}
+.works_product_merch{
+	min-height: 100vh;
+	height: 2050px;
+    background: #C0DEBA;
+	background-size: cover;
+    padding-top: 81px;
+}
+.wrapper__works{
+	max-width: 1084px;
+	height: 3200px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.58);
+	z-index: 2;
+}
+.wrapper__works_vk_adv{
+	max-width: 1084px;
+	height: 3050px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.58);
+	z-index: 2;
+}
+.wrapper__works_inst_post{
+	max-width: 1084px;
+	height: 4250px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.58);
+	z-index: 2;
+}
+.wrapper__works_inst_story{
+	max-width: 1084px;
+	height: 3800px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.58);
+	z-index: 2;
+}
+.wrapper__works_product_print{
+	max-width: 1084px;
+	height: 2800px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.58);
+	z-index: 2;
+}
+.wrapper__works_product_merch{
+	max-width: 1084px;
+	height: 1900px;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.58);
+	z-index: 2;
+}
+.works__buttons{
+	padding-top: 52px;
+	max-width: 878px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 36px;
+
+}
+.works__button_large{
+	grid-column: span 12;
+}
+.works__button_small{
+	grid-column: span 3;	
+}
+.works__button_big{
+	grid-column: span 4;	
+}
+.works__button_half{
+	grid-column: span 6;	
+}
+/*.works__button_half:active, .works__button_half:focus, .works__button_half:hover{
+	transform: scale(1.5);
+}
+.works__button_big:active, .works__button_big:focus, .works__button_big:hover{
+	transform: scale(1.75);
+}*/

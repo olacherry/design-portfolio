@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title%}Работы{% endblock %}
+{% block content %}
+    <div class="main">
+
+        <section class="question">
+            <div class="wrapper__quest">
+                <p class="question__one">Предлагаю пройти небольшой тест и выбрать категории работ</p>
+                <div class="wrapper__quest-small">
+                    <a href="{% url 'type' %}" class="question__start">Поехали!</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}

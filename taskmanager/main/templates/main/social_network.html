@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title%}Работы{% endblock %}
+{% block content %}
+<div class="main">
+
+        <section class="test">
+            <div class="wrapper__test">
+                <h1 class="test__title">Выберете соцсеть</h1>
+                <div class="test__buttons">
+                    <a href="{% url 'vk' %}" class="test__button">vk</a>
+                    <a href="{% url 'inst' %}" class="test__button">instagram</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}

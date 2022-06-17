@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title%}Кто я?{% endblock %}
+
+{% block content %}
+    <div class="main">
+         <!-- Intro start-->
+         <section class="intro__two">
+            <div class="wrapper">
+                <div class="intro__wrapp-two">
+                    <div class="intro__title-many-two">
+                        <h1 class="intro__title-two">Черярина Ольга</h1>
+                        <h1 class="intro__subtitle-two">Graphic & Web дизайнер</h1>
+                        <div class="intro__text-box">
+                            <p class="intro__text-two">Привет, я Оля. Это мой сайт-портфолио, показывающий мои работы, как Frontend & Graphic дизайнера. Если вас заинтриговала какой-либо из моих работ или есть вопросы обязательно свяжитесь со мной.</p>
+                        </div>
+                    </div>
+                    <div class="intro-photo-two">
+                        <img src="{% static 'img/me-two.jpg' %}" alt="Cheryarina" class="intro__photo-me">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+{% endblock %}
